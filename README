@@ -1,0 +1,19 @@
+1. To run the codes using example data, use the following:
+	python3 real_time_ultrasound_anomaly.py file_id
+	
+   The file_id is the batch number, you can choose from 0 to 2.
+
+2. To implement the codes using real-time data, replace the variables "feature[t, :]" and "target_anomaly[t]" in line 39 and 43, respectively, with your online data. 
+
+	"feature[t, :]": the input at each instant time
+	"target_anomaly[t]": the output at each instant time
+
+3. The following are tunable parameters:
+	predictor.in_param = [1, 2, 4]
+	predictor.out_param = [0, 4, 10]
+	predictor.duration_settings = [0.09, 0.25]
+
+
+
+
+
